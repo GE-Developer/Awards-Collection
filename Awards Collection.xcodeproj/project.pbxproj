@@ -11,6 +11,12 @@
 		EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C603B267CFDCD0073D8B9 /* ContentView.swift */; };
 		EE7C603E267CFDCE0073D8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */; };
 		EE7C6041267CFDCE0073D8B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7C6040267CFDCE0073D8B9 /* Preview Assets.xcassets */; };
+		EE7C604C267CFE650073D8B9 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C604B267CFE650073D8B9 /* AwardsView.swift */; };
+		EE7C604E267CFF110073D8B9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C604D267CFF110073D8B9 /* MainView.swift */; };
+		EE7C6052267D02090073D8B9 /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6051267D02090073D8B9 /* StarterView.swift */; };
+		EE7C6054267D03610073D8B9 /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6053267D03610073D8B9 /* GradientRectangles.swift */; };
+		EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6055267D0CBD0073D8B9 /* PathView.swift */; };
+		EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6057267D14F20073D8B9 /* CurvesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7C6040267CFDCE0073D8B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE7C6042267CFDCE0073D8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7C604B267CFE650073D8B9 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		EE7C604D267CFF110073D8B9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EE7C6051267D02090073D8B9 /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		EE7C6053267D03610073D8B9 /* GradientRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
+		EE7C6055267D0CBD0073D8B9 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
+		EE7C6057267D14F20073D8B9 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +64,9 @@
 		EE7C6038267CFDCD0073D8B9 /* Awards Collection */ = {
 			isa = PBXGroup;
 			children = (
-				EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */,
-				EE7C603B267CFDCD0073D8B9 /* ContentView.swift */,
-				EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */,
-				EE7C6042267CFDCE0073D8B9 /* Info.plist */,
+				EE7C6048267CFE1D0073D8B9 /* Supports */,
+				EE7C604A267CFE4D0073D8B9 /* Views */,
+				EE7C6049267CFE420073D8B9 /* Resources */,
 				EE7C603F267CFDCE0073D8B9 /* Preview Content */,
 			);
 			path = "Awards Collection";
@@ -67,6 +78,37 @@
 				EE7C6040267CFDCE0073D8B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE7C6048267CFE1D0073D8B9 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */,
+				EE7C6042267CFDCE0073D8B9 /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		EE7C6049267CFE420073D8B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE7C604A267CFE4D0073D8B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C603B267CFDCD0073D8B9 /* ContentView.swift */,
+				EE7C604B267CFE650073D8B9 /* AwardsView.swift */,
+				EE7C6057267D14F20073D8B9 /* CurvesView.swift */,
+				EE7C6055267D0CBD0073D8B9 /* PathView.swift */,
+				EE7C6053267D03610073D8B9 /* GradientRectangles.swift */,
+				EE7C604D267CFF110073D8B9 /* MainView.swift */,
+				EE7C6051267D02090073D8B9 /* StarterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */,
+				EE7C6052267D02090073D8B9 /* StarterView.swift in Sources */,
+				EE7C604E267CFF110073D8B9 /* MainView.swift in Sources */,
+				EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */,
 				EE7C603A267CFDCD0073D8B9 /* Awards_CollectionApp.swift in Sources */,
+				EE7C604C267CFE650073D8B9 /* AwardsView.swift in Sources */,
+				EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */,
+				EE7C6054267D03610073D8B9 /* GradientRectangles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Awards Collection/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Awards Collection/Info.plist";
+				INFOPLIST_FILE = "Awards Collection/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Awards Collection/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Awards Collection/Info.plist";
+				INFOPLIST_FILE = "Awards Collection/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
