@@ -12,6 +12,7 @@ struct AwardsView: View {
         NavigationView {
             VStack {
                 ScrollView {
+                    HomeWorkFigure(width: 250)
                     GradientRectangles(width: 250, height: 250)
                     PathView(width: 250, height: 250)
                     CurvesView(width: 250, height: 250)

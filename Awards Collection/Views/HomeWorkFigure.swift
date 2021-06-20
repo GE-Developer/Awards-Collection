@@ -13,173 +13,220 @@ struct HomeWorkFigure: View {
     var body: some View {
         
         ZStack {
+            
             Image("IronMan")
                 .resizable()
+                .scaledToFill()
+                .frame(width: width, height: width * 1.5)
             
             GeometryReader { geometry in
                 let width = geometry.size.width
-                let height = width * 2
+                let height = width * 1.5
                 
-                // MARK: - Носок левый
                 
+                // MARK: - Щека правая золотая
                 Path { path in
-                    path.move(to: CGPoint(x: width * 0.375, y: height * 0.987))
+                    path.move(to: CGPoint(x: width * 0.663, y: height * 0.953))
+                    
+                    path.addLine(to: CGPoint(x: width * 0.622, y: height * 0.95))
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.355, y: height * 0.923),
-                        control: CGPoint(x: width * 0.34, y: height * 0.92)
+                        to: CGPoint(x: width * 0.65, y: height * 0.88),
+                        control: CGPoint(x: width * 0.64, y: height * 0.94)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.395, y: height * 0.962),
-                        control: CGPoint(x: width * 0.36, y: height * 0.95)
+                        to: CGPoint(x: width * 0.707, y: height * 0.8),
+                        control: CGPoint(x: width * 0.66, y: height * 0.85)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.82, y: height * 0.688))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.876, y: height * 0.56),
+                        control: CGPoint(x: width * 0.87, y: height * 0.64)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.455, y: height * 0.963),
-                        control: CGPoint(x: width * 0.427, y: height * 0.9656)
+                        to: CGPoint(x: width * 0.906, y: height * 0.486),
+                        control: CGPoint(x: width * 0.9, y: height * 0.5)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.924, y: height * 0.54))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.902, y: height * 0.596),
+                        control: CGPoint(x: width * 0.935, y: height * 0.56)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.8995, y: height * 0.62))
+                    
+                    path.addLine(to: CGPoint(x: width * 0.764, y: height * 0.867))
+                    
+                    path.addLine(to: CGPoint(x: width * 0.663, y: height * 0.953))
+                    
+                }
+                //.stroke(lineWidth: 0.5)
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.7985611064, green: 0.6572520831, blue: 0.3815595745, alpha: 1)), Color(#colorLiteral(red: 0.6357985735, green: 0.5022894144, blue: 0.2368019521, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.573,
+                    endRadius: width * 0.640
+                ))
+                
+                
+                // MARK: - Подбородок
+                Path { path in
+                    path.move(to: CGPoint(x: width * 0.666, y: height * 0.951))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.556, y: height * 0.947),
+                        control: CGPoint(x: width * 0.63, y: height * 0.946)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.4758, y: height * 0.941),
-                        control: CGPoint(x: width * 0.485, y: height * 0.95)
+                        to: CGPoint(x: width * 0.54, y: height * 0.939),
+                        control: CGPoint(x: width * 0.54, y: height * 0.945)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.477, y: height * 0.985),
-                        control: CGPoint(x: width * 0.49, y: height * 0.95)
+                        to: CGPoint(x: width * 0.531, y: height * 0.935),
+                        control: CGPoint(x: width * 0.536, y: height * 0.934)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.45, y: height * 0.935))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.4378, y: height * 0.939),
+                        control: CGPoint(x: width * 0.438, y: height * 0.935)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.46, y: height * 0.992),
-                        control: CGPoint(x: width * 0.47, y: height * 0.992)
+                        to: CGPoint(x: width * 0.425, y: height * 0.9467),
+                        control: CGPoint(x: width * 0.435, y: height * 0.947)
                     )
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.375, y: height * 0.987),
-                        control: CGPoint(x: width * 0.43, y: height * 0.994)
+                        to: CGPoint(x: width * 0.315, y: height * 0.951),
+                        control: CGPoint(x: width * 0.36, y: height * 0.945)
                     )
                     
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.39, y: height * 0.982),
+                        control: CGPoint(x: width * 0.359, y: height * 0.984)
+                    )
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.6, y: height * 0.982),
+                        control: CGPoint(x: width * 0.45, y: height * 0.982)
+                    )
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.644, y: height * 0.969),
+                        control: CGPoint(x: width * 0.63, y: height * 0.98)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.666, y: height * 0.951))
+                }
+                //.stroke(lineWidth: 1)
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.641192019, green: 0.1846340001, blue: 0.172197938, alpha: 1)), Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.75,
+                    endRadius: width * 0.65
+                ))
+                
+                
+                // MARK: - Правая щека красная
+                Path { path in
+                    path.move(to: CGPoint(x: width * 0.762, y: height * 0.867))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.875, y: height * 0.745),
+                        control: CGPoint(x: width * 0.83, y: height * 0.8)
+                    )
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.9, y: height * 0.618),
+                        control: CGPoint(x: width * 0.89, y: height * 0.69)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.77, y: height * 0.77))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.762, y: height * 0.867),
+                        control: CGPoint(x: width * 0.732, y: height * 0.818)
+                    )
                 }
                 //.stroke()
-                .fill(
-                    RadialGradient(
-                        gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5996468284, green: 0.005878890474, blue: 0.005878890474, alpha: 1)), Color(#colorLiteral(red: 0.8213003139, green: 0.35600875, blue: 0.3531825889, alpha: 1))]),
-                        center: .center,
-                        startRadius: width * 0.92,
-                        endRadius: width * 0.99
-                    )
-                )
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.641192019, green: 0.1846340001, blue: 0.172197938, alpha: 1)), Color(#colorLiteral(red: 0.03220745048, green: 0.03220745048, blue: 0.03220745048, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.77,
+                    endRadius: width * 0.31
+                ))
                 
                 Path { path in
-                    path.move(to: CGPoint(x: width * 0.395, y: height * 0.9634))
+                    path.move(to: CGPoint(x: width * 0.893, y: height * 0.638))
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.375, y: height * 0.9847),
-                        control: CGPoint(x: width * 0.39, y: height * 0.986)
+                        to: CGPoint(x: width * 0.817, y: height * 0.805),
+                        control: CGPoint(x: width * 0.846, y: height * 0.7)
                     )
                 }
-                .stroke(
-                    RadialGradient(
-                        gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5996468284, green: 0.005878890474, blue: 0.005878890474, alpha: 1)), Color(#colorLiteral(red: 0.8084362323, green: 0.3011202089, blue: 0.3086891417, alpha: 1))]),
-                        center: .center,
-                        startRadius: width * 0.9,
-                        endRadius: width * 0.96
-                    ),
-                    lineWidth: 2
-                )
+                .stroke(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5576926885, green: 0.1633879358, blue: 0.1529443652, alpha: 1)), Color(#colorLiteral(red: 0.05860253536, green: 0.0005486226102, blue: 0, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.77,
+                    endRadius: width * 0.31
+                ), lineWidth: width * 0.008)
+                
+                
+                // MARK: - Левая щека красная
+                Path { path in
+                    path.move(to: CGPoint(x: width * 0.22, y: height * 0.864))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.21, y: height * 0.755),
+                        control: CGPoint(x: width * 0.26, y: height * 0.81)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.1, y: height * 0.622))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.084, y: height * 0.59),
+                        control: CGPoint(x: width * 0.086, y: height * 0.6)
+                    )
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.11, y: height * 0.745),
+                        control: CGPoint(x: width * 0.08, y: height * 0.6)
+                    )
+                    
+                    path.addLine(to: CGPoint(x: width * 0.22, y: height * 0.864))
+                }
+                //.stroke()
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.641192019, green: 0.1846340001, blue: 0.172197938, alpha: 1)), Color(#colorLiteral(red: 0.03220745048, green: 0.03220745048, blue: 0.03220745048, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.77,
+                    endRadius: width * 0.31
+                ))
                 
                 Path { path in
-                    path.move(to: CGPoint(x: width * 0.455, y: height * 0.9635))
+                    path.move(to: CGPoint(x: width * 0.107, y: height * 0.638))
                     
                     path.addQuadCurve(
-                        to: CGPoint(x: width * 0.465, y: height * 0.99),
-                        control: CGPoint(x: width * 0.475, y: height * 0.99)
+                        to: CGPoint(x: width * 0.173, y: height * 0.805),
+                        control: CGPoint(x: width * 0.154, y: height * 0.7)
                     )
                 }
-                .stroke(
-                    RadialGradient(
-                        gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5996468284, green: 0.005878890474, blue: 0.005878890474, alpha: 1)), Color(#colorLiteral(red: 0.8084362323, green: 0.3011202089, blue: 0.3086891417, alpha: 1))]),
-                        center: .center,
-                        startRadius: width * 0.9,
-                        endRadius: width * 0.96
-                    ),
-                    lineWidth: 2
-                )
-                
-                Path { path in
-                    path.move(to: CGPoint(x: width * 0.39, y: height * 0.979))
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.4656, y: height * 0.9847),
-                        control: CGPoint(x: width * 0.39, y: height * 0.986)
-                    )
-                }
-                .stroke(
-                    RadialGradient(
-                        gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5996468284, green: 0.005878890474, blue: 0.005878890474, alpha: 1)), Color(#colorLiteral(red: 0.8084362323, green: 0.3011202089, blue: 0.3086891417, alpha: 1))]),
-                        center: .center,
-                        startRadius: width * 0.9,
-                        endRadius: width * 0.96
-                    ),
-                    lineWidth: 1.9
-                )
-                
-                // MARK: - Стопа левая
-                
-                Path { path in
-                    path.move(to: CGPoint(x: width * 0.355, y: height * 0.923))
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.395, y: height * 0.962),
-                        control: CGPoint(x: width * 0.36, y: height * 0.95)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.455, y: height * 0.963),
-                        control: CGPoint(x: width * 0.427, y: height * 0.9656)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.4758, y: height * 0.941),
-                        control: CGPoint(x: width * 0.485, y: height * 0.95)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.471, y: height * 0.93),
-                        control: CGPoint(x: width * 0.469, y: height * 0.93)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.443, y: height * 0.938),
-                        control: CGPoint(x: width * 0.465, y: height * 0.937)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.395, y: height * 0.94),
-                        control: CGPoint(x: width * 0.465, y: height * 0.937)
-                    )
-                    
-                    path.addQuadCurve(
-                        to: CGPoint(x: width * 0.355, y: height * 0.923),
-                        control: CGPoint(x: width * 0.36, y: height * 0.937)
-                    )
-                }
-                .stroke()
-                
-                
-                
-                
-                
-                
-                
-
-                
-                
-                
-                
-                
-                
+                .stroke(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5576926885, green: 0.1633879358, blue: 0.1529443652, alpha: 1)), Color(#colorLiteral(red: 0.05860253536, green: 0.0005486226102, blue: 0, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.77,
+                    endRadius: width * 0.31
+                ), lineWidth: width * 0.008)
                 
                 
                 
@@ -195,7 +242,7 @@ struct HomeWorkFigure: View {
                 
                 
             }
-            .frame(width: width, height: width * 2)
+            .frame(width: width, height: width * 1.5)
         }
     }
 }
