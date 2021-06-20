@@ -118,13 +118,48 @@ struct ElementsOnHair: View {
                 ))
                 .shadow(color: .black, radius: width * 0.003)
                 
+                // MARK: - Рога
+                Path { path in
+                    path.move(to: CGPoint(x: width * 0.336, y: height * 0.095))
+                    
+                    path.addLine(to: CGPoint(x: width * 0.326, y: height * 0.06))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.335, y: height * 0.05),
+                        control: CGPoint(x: width * 0.3256, y: height * 0.054)
+                    )
+                }
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2466896905, green: 0.1005800248, blue: 0.08902106072, alpha: 1)), Color(#colorLiteral(red: 0.5233400133, green: 0.1424159802, blue: 0.171845304, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.7,
+                    endRadius: width * 0.55
+                ))
+                .shadow(color: Color(#colorLiteral(red: 0.4806120901, green: 0.3274408759, blue: 0.3263132393, alpha: 1)), radius: width * 0.006)
                 
+                
+                Path { path in
+                    path.move(to: CGPoint(x: width * 0.664, y: height * 0.095))
+                    
+                    path.addLine(to: CGPoint(x: width * 0.664, y: height * 0.06))
+                    
+                    path.addQuadCurve(
+                        to: CGPoint(x: width * 0.67, y: height * 0.058),
+                        control: CGPoint(x: width * 0.6, y: height * 0.054)
+                    )
+                }
+                .fill(RadialGradient(
+                    gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2466896905, green: 0.1005800248, blue: 0.08902106072, alpha: 1)), Color(#colorLiteral(red: 0.5233400133, green: 0.1424159802, blue: 0.171845304, alpha: 1))]),
+                    center: .center,
+                    startRadius: width * 0.7,
+                    endRadius: width * 0.55
+                ))
+                .shadow(color: Color(#colorLiteral(red: 0.5823119963, green: 0.3967289921, blue: 0.395362742, alpha: 1)), radius: width * 0.005)
             }
         }
         .frame(width: width, height: width * 1.5)
     }
 }
-
 
 struct ElementsOnHair_Previews: PreviewProvider {
     static var previews: some View {
