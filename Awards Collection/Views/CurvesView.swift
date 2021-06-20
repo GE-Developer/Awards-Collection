@@ -17,6 +17,66 @@ struct CurvesView: View {
             let middle = size / 2
             let nearline = size * 0.1
             let farline = size * 0.9
+  
+            Path { path in
+                path.move(to: CGPoint(x: middle, y: nearline))
+                path.addQuadCurve(
+                    to: CGPoint(x: farline, y: middle),
+                    control: CGPoint(x: size, y: 0)
+                )
+                path.addQuadCurve(
+                    to: CGPoint(x: middle, y: farline),
+                    control: CGPoint(x: size, y: size)
+                )
+                path.addQuadCurve(
+                    to: CGPoint(x: nearline, y: middle),
+                    control: CGPoint(x: 0, y: size)
+                )
+                path.addQuadCurve(
+                    to: CGPoint(x: middle, y: nearline),
+                    control: CGPoint(x: 0, y: 0)
+                )
+            }
+            .fill(
+                RadialGradient(
+                    gradient: Gradient(colors: [.white, .yellow]),
+                    center: .center,
+                    startRadius: geometry.size.width * 0.05,
+                    endRadius: geometry.size.width * 0.6
+                )
+            )
+            
+            Path { path in
+                path.addArc(
+                    center: CGPoint(x: nearline, y: nearline),
+                    radius: middle,
+                    startAngle: .degrees(90),
+                    endAngle: .degrees(0),
+                    clockwise: true
+                )
+                path.addArc(
+                    center: CGPoint(x: farline, y: nearline),
+                    radius: middle,
+                    startAngle: .degrees(180),
+                    endAngle: .degrees(90),
+                    clockwise: true
+                )
+                path.addArc(
+                    center: CGPoint(x: farline, y: farline),
+                    radius: middle,
+                    startAngle: .degrees(270),
+                    endAngle: .degrees(180),
+                    clockwise: true
+                )
+                path.addArc(
+                    center: CGPoint(x: nearline, y: farline),
+                    radius: middle,
+                    startAngle: .degrees(0),
+                    endAngle: .degrees(270),
+                    clockwise: true
+                )
+            }
+            .stroke(Color.orange, lineWidth: 2)
         }
         .frame(width: width, height: height)
     }
