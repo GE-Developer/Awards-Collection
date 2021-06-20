@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3CE580267FA6A30054A26A /* SecondFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE57F267FA6A30054A26A /* SecondFigure.swift */; };
+		EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */; };
+		EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */; };
 		EE7C603A267CFDCD0073D8B9 /* Awards_CollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */; };
 		EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C603B267CFDCD0073D8B9 /* ContentView.swift */; };
 		EE7C603E267CFDCE0073D8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */; };
@@ -17,10 +20,13 @@
 		EE7C6054267D03610073D8B9 /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6053267D03610073D8B9 /* GradientRectangles.swift */; };
 		EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6055267D0CBD0073D8B9 /* PathView.swift */; };
 		EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6057267D14F20073D8B9 /* CurvesView.swift */; };
-		EEE4DB29267E4DB0000863E8 /* HomeWorkFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DB28267E4DB0000863E8 /* HomeWorkFigure.swift */; };
+		EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3CE57F267FA6A30054A26A /* SecondFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFigure.swift; sourceTree = "<group>"; };
+		EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsFigure.swift; sourceTree = "<group>"; };
+		EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsOnHair.swift; sourceTree = "<group>"; };
 		EE7C6036267CFDCD0073D8B9 /* Awards Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awards_CollectionApp.swift; sourceTree = "<group>"; };
 		EE7C603B267CFDCD0073D8B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +39,7 @@
 		EE7C6053267D03610073D8B9 /* GradientRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
 		EE7C6055267D0CBD0073D8B9 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		EE7C6057267D14F20073D8B9 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
-		EEE4DB28267E4DB0000863E8 /* HomeWorkFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkFigure.swift; sourceTree = "<group>"; };
+		EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFigure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,10 @@
 		EE7C6038267CFDCD0073D8B9 /* Awards Collection */ = {
 			isa = PBXGroup;
 			children = (
+				EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */,
+				EE3CE57F267FA6A30054A26A /* SecondFigure.swift */,
+				EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */,
+				EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */,
 				EE7C6048267CFE1D0073D8B9 /* Supports */,
 				EE7C604A267CFE4D0073D8B9 /* Views */,
 				EE7C6049267CFE420073D8B9 /* Resources */,
@@ -107,7 +117,6 @@
 				EE7C6057267D14F20073D8B9 /* CurvesView.swift */,
 				EE7C6055267D0CBD0073D8B9 /* PathView.swift */,
 				EE7C6053267D03610073D8B9 /* GradientRectangles.swift */,
-				EEE4DB28267E4DB0000863E8 /* HomeWorkFigure.swift */,
 				EE7C604D267CFF110073D8B9 /* MainView.swift */,
 				EE7C6051267D02090073D8B9 /* StarterView.swift */,
 			);
@@ -186,9 +195,12 @@
 				EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */,
 				EE7C6052267D02090073D8B9 /* StarterView.swift in Sources */,
 				EE7C604E267CFF110073D8B9 /* MainView.swift in Sources */,
+				EE3CE580267FA6A30054A26A /* SecondFigure.swift in Sources */,
+				EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */,
+				EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */,
 				EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */,
 				EE7C603A267CFDCD0073D8B9 /* Awards_CollectionApp.swift in Sources */,
-				EEE4DB29267E4DB0000863E8 /* HomeWorkFigure.swift in Sources */,
+				EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */,
 				EE7C604C267CFE650073D8B9 /* AwardsView.swift in Sources */,
 				EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */,
 				EE7C6054267D03610073D8B9 /* GradientRectangles.swift in Sources */,
