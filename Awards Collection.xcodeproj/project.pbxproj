@@ -20,6 +20,8 @@
 		EE7C6054267D03610073D8B9 /* GradientRectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6053267D03610073D8B9 /* GradientRectangles.swift */; };
 		EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6055267D0CBD0073D8B9 /* PathView.swift */; };
 		EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6057267D14F20073D8B9 /* CurvesView.swift */; };
+		EE8677DD267FE489005EDAB0 /* EyesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DC267FE489005EDAB0 /* EyesElement.swift */; };
+		EE8677DF267FEEF9005EDAB0 /* IronMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DE267FEEF9005EDAB0 /* IronMan.swift */; };
 		EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		EE7C6053267D03610073D8B9 /* GradientRectangles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRectangles.swift; sourceTree = "<group>"; };
 		EE7C6055267D0CBD0073D8B9 /* PathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathView.swift; sourceTree = "<group>"; };
 		EE7C6057267D14F20073D8B9 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
+		EE8677DC267FE489005EDAB0 /* EyesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesElement.swift; sourceTree = "<group>"; };
+		EE8677DE267FEEF9005EDAB0 /* IronMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMan.swift; sourceTree = "<group>"; };
 		EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFigure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,8 @@
 				EE3CE57F267FA6A30054A26A /* SecondFigure.swift */,
 				EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */,
 				EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */,
+				EE8677DC267FE489005EDAB0 /* EyesElement.swift */,
+				EE8677DE267FEEF9005EDAB0 /* IronMan.swift */,
 				EE7C6048267CFE1D0073D8B9 /* Supports */,
 				EE7C604A267CFE4D0073D8B9 /* Views */,
 				EE7C6049267CFE420073D8B9 /* Resources */,
@@ -192,10 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8677DF267FEEF9005EDAB0 /* IronMan.swift in Sources */,
 				EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */,
 				EE7C6052267D02090073D8B9 /* StarterView.swift in Sources */,
 				EE7C604E267CFF110073D8B9 /* MainView.swift in Sources */,
 				EE3CE580267FA6A30054A26A /* SecondFigure.swift in Sources */,
+				EE8677DD267FE489005EDAB0 /* EyesElement.swift in Sources */,
 				EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */,
 				EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */,
 				EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */,

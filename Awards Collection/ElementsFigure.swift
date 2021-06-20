@@ -13,7 +13,7 @@ struct ElementsFigure: View {
     var body: some View {
         ZStack {
             SecondFigure(width: width)
-                .shadow(radius: width * 0.05)
+                .shadow(radius: width * 0.015)
             FirstFigure(width: width)
                 .shadow(radius: width * 0.001)
             
