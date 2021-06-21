@@ -13,11 +13,12 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            Button(action: {showAward.toggle()} ) {
+            Button(action: buttonAction) {
                 HStack {
                     Text(showAward ? "Hide Award" : "Show Award")
                     Spacer()
                     Image(systemName: "chevron.up.square")
+                        .scaleEffect(showAward ? 2 : 1)
                         .rotationEffect(.degrees(showAward ? 0 : 180))
                         .animation(.default)
                 }
@@ -25,17 +26,24 @@ struct MainView: View {
             
             Spacer()
             
-            IronMan(
-                width: UIScreen.main.bounds.width * 0.7,
-                opacity: opacity
-            )
-                .gesture(TapGesture()
-                            .onEnded { opacity = 0.9 })
-    
+            IronMan(width: UIScreen.main.bounds.width * 0.7,
+                    opacity: opacity)
+                .scaleEffect(showAward ? 1 : 0)
+                .rotationEffect(showAward ? .degrees(0) : .degrees(-60))
+                .animation(.spring(response: 3, dampingFraction: 1).speed(1.3))
+            
             Spacer()
         }
         .font(.headline)
         .padding()
+    }
+    
+    private func buttonAction() {
+        withAnimation {
+            showAward.toggle()
+            opacity = 0.9
+        }
+        
     }
 }
 
