@@ -37,7 +37,7 @@ struct RedEyes: View {
                     control: CGPoint(x: width * 0.73, y: height * 0.572)
                 )
             }
-            .fill(Color(#colorLiteral(red: 0.8318315756, green: 0.01557331111, blue: 0, alpha: 1)))
+            .fill(Color(#colorLiteral(red: 0.7281038688, green: 0.01391959628, blue: 0.007102936104, alpha: 1)))
             .opacity(opacity)
             .animation(.linear.speed(0.5).repeatForever())
                 
@@ -62,7 +62,7 @@ struct RedEyes: View {
                     control: CGPoint(x: width * 0.27, y: height * 0.572)
                 )
             }
-            .fill(Color(#colorLiteral(red: 0.8318315756, green: 0.01557331111, blue: 0, alpha: 1)))
+            .fill(Color(#colorLiteral(red: 0.7281038688, green: 0.01391959628, blue: 0.007102936104, alpha: 1)))
             .opacity(opacity)
             .animation(.linear.speed(0.5).repeatForever())
         }

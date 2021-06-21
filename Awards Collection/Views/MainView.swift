@@ -25,12 +25,24 @@ struct MainView: View {
             }
             
             Spacer()
-            
+
             IronMan(width: UIScreen.main.bounds.width * 0.7,
                     opacity: opacity)
                 .scaleEffect(showAward ? 1 : 0)
                 .rotationEffect(showAward ? .degrees(0) : .degrees(-60))
                 .animation(.spring(response: 3, dampingFraction: 1).speed(1.3))
+                .gesture(TapGesture().onEnded {
+                    showAward.toggle()
+                }).disabled(!showAward)
+            
+            Spacer()
+            
+            Text("PUSH IRON MAN")
+                .fontWeight(.black)
+                .font(.system(.largeTitle, design: .rounded))
+                .foregroundColor(.purple)
+                .animation(.easeIn.delay(1))
+                .offset(y: showAward ? 0 : 200)
             
             Spacer()
         }
@@ -43,7 +55,6 @@ struct MainView: View {
             showAward.toggle()
             opacity = 0.9
         }
-        
     }
 }
 
