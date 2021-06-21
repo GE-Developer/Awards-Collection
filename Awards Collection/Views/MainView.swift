@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showAward = false
+    @State private var opacity: Double = 0
     
     var body: some View {
         VStack {
-            Button(action: { showAward.toggle() }) {
+            Button(action: {showAward.toggle()} ) {
                 HStack {
                     Text(showAward ? "Hide Award" : "Show Award")
                     Spacer()
@@ -21,11 +22,16 @@ struct MainView: View {
                         .animation(.default)
                 }
             }
+            
             Spacer()
-            GradientRectangles(width: 250, height: 250)
-                .offset(x: showAward ? 0 : -UIScreen.main.bounds.width)
-                .animation(.easeInOut(duration: 0.7))
-                
+            
+            IronMan(
+                width: UIScreen.main.bounds.width * 0.7,
+                opacity: opacity
+            )
+                .gesture(TapGesture()
+                            .onEnded { opacity = 0.9 })
+    
             Spacer()
         }
         .font(.headline)

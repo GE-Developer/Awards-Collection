@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct StarterView: View {
+    let eyesColor: Color
+    
     var body: some View {
         TabView {
             MainView()
@@ -16,7 +18,7 @@ struct StarterView: View {
                     Text("Main")
                 }
             
-            AwardsView()
+            AwardsView(eyesColor: .white)
                 .tabItem {
                     Image(systemName: "pencil.and.outline")
                     Text("Awards")
@@ -27,6 +29,6 @@ struct StarterView: View {
 
 struct StarterView_Previews: PreviewProvider {
     static var previews: some View {
-        StarterView()
+        StarterView(eyesColor: .white)
     }
 }

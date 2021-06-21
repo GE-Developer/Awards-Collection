@@ -22,6 +22,8 @@
 		EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6057267D14F20073D8B9 /* CurvesView.swift */; };
 		EE8677DD267FE489005EDAB0 /* EyesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DC267FE489005EDAB0 /* EyesElement.swift */; };
 		EE8677DF267FEEF9005EDAB0 /* IronMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DE267FEEF9005EDAB0 /* IronMan.swift */; };
+		EEE4435926802AAC00672CC3 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4435826802AAC00672CC3 /* Eyes.swift */; };
+		EEE4435B26802D4700672CC3 /* RedEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4435A26802D4700672CC3 /* RedEyes.swift */; };
 		EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		EE7C6057267D14F20073D8B9 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		EE8677DC267FE489005EDAB0 /* EyesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesElement.swift; sourceTree = "<group>"; };
 		EE8677DE267FEEF9005EDAB0 /* IronMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMan.swift; sourceTree = "<group>"; };
+		EEE4435826802AAC00672CC3 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
+		EEE4435A26802D4700672CC3 /* RedEyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedEyes.swift; sourceTree = "<group>"; };
 		EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFigure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,12 +80,7 @@
 		EE7C6038267CFDCD0073D8B9 /* Awards Collection */ = {
 			isa = PBXGroup;
 			children = (
-				EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */,
-				EE3CE57F267FA6A30054A26A /* SecondFigure.swift */,
-				EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */,
-				EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */,
-				EE8677DC267FE489005EDAB0 /* EyesElement.swift */,
-				EE8677DE267FEEF9005EDAB0 /* IronMan.swift */,
+				EE8677E0267FF27E005EDAB0 /* IronMan View */,
 				EE7C6048267CFE1D0073D8B9 /* Supports */,
 				EE7C604A267CFE4D0073D8B9 /* Views */,
 				EE7C6049267CFE420073D8B9 /* Resources */,
@@ -119,14 +118,29 @@
 			isa = PBXGroup;
 			children = (
 				EE7C603B267CFDCD0073D8B9 /* ContentView.swift */,
-				EE7C604B267CFE650073D8B9 /* AwardsView.swift */,
 				EE7C6057267D14F20073D8B9 /* CurvesView.swift */,
 				EE7C6055267D0CBD0073D8B9 /* PathView.swift */,
 				EE7C6053267D03610073D8B9 /* GradientRectangles.swift */,
+				EE7C604B267CFE650073D8B9 /* AwardsView.swift */,
 				EE7C604D267CFF110073D8B9 /* MainView.swift */,
 				EE7C6051267D02090073D8B9 /* StarterView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		EE8677E0267FF27E005EDAB0 /* IronMan View */ = {
+			isa = PBXGroup;
+			children = (
+				EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */,
+				EE3CE57F267FA6A30054A26A /* SecondFigure.swift */,
+				EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */,
+				EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */,
+				EE8677DC267FE489005EDAB0 /* EyesElement.swift */,
+				EEE4435826802AAC00672CC3 /* Eyes.swift */,
+				EEE4435A26802D4700672CC3 /* RedEyes.swift */,
+				EE8677DE267FEEF9005EDAB0 /* IronMan.swift */,
+			);
+			path = "IronMan View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,8 @@
 				EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */,
 				EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */,
 				EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */,
+				EEE4435B26802D4700672CC3 /* RedEyes.swift in Sources */,
+				EEE4435926802AAC00672CC3 /* Eyes.swift in Sources */,
 				EE7C603A267CFDCD0073D8B9 /* Awards_CollectionApp.swift in Sources */,
 				EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */,
 				EE7C604C267CFE650073D8B9 /* AwardsView.swift in Sources */,

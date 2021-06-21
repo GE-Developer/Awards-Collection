@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct AwardsView: View {
+    let eyesColor: Color
     var body: some View {
         NavigationView {
             VStack {
                 ScrollView {
-                    IronMan(width: 250, eyesColor: .white)
+                    IronMan(width: 250, opacity: 0)
                     GradientRectangles(width: 250, height: 250)
                     PathView(width: 250, height: 250)
                     CurvesView(width: 250, height: 250)
@@ -25,6 +26,6 @@ struct AwardsView: View {
 
 struct AwardsView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardsView()
+        AwardsView(eyesColor: .white)
     }
 }

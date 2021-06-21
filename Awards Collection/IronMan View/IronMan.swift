@@ -9,15 +9,22 @@ import SwiftUI
 
 struct IronMan: View {
     let width: CGFloat
-    let eyesColor: Color
+    let opacity: Double
     
     var body: some View {
-        EyesElement(width: width, eyesColor: eyesColor)
+        ZStack {
+            EyesElement(width: width)
+            Eyes(width: width)
+            RedEyes(width: width, opacity: opacity)
+        }
     }
 }
 
 struct IronMan_Previews: PreviewProvider {
     static var previews: some View {
-        IronMan(width: 422, eyesColor: .red)
+        IronMan(width: 422, opacity: 0)
     }
 }
+
+
+
