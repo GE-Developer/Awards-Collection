@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE365D45268256EE0013081C /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE365D44268256EE0013081C /* CustomGridView.swift */; };
 		EE3CE580267FA6A30054A26A /* SecondFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE57F267FA6A30054A26A /* SecondFigure.swift */; };
 		EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */; };
 		EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */; };
+		EE5232582683E6700000E930 /* VerticalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5232572683E6700000E930 /* VerticalGridView.swift */; };
 		EE7C603A267CFDCD0073D8B9 /* Awards_CollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */; };
 		EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C603B267CFDCD0073D8B9 /* ContentView.swift */; };
 		EE7C603E267CFDCE0073D8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7C603D267CFDCE0073D8B9 /* Assets.xcassets */; };
@@ -22,15 +24,18 @@
 		EE7C6058267D14F20073D8B9 /* CurvesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C6057267D14F20073D8B9 /* CurvesView.swift */; };
 		EE8677DD267FE489005EDAB0 /* EyesElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DC267FE489005EDAB0 /* EyesElement.swift */; };
 		EE8677DF267FEEF9005EDAB0 /* IronMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8677DE267FEEF9005EDAB0 /* IronMan.swift */; };
+		EED7AE6926826F920075E95C /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AE6826826F920075E95C /* Award.swift */; };
 		EEE4435926802AAC00672CC3 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4435826802AAC00672CC3 /* Eyes.swift */; };
 		EEE4435B26802D4700672CC3 /* RedEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4435A26802D4700672CC3 /* RedEyes.swift */; };
 		EEE4DB29267E4DB0000863E8 /* FirstFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE365D44268256EE0013081C /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
 		EE3CE57F267FA6A30054A26A /* SecondFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFigure.swift; sourceTree = "<group>"; };
 		EE3CE581267FB8CE0054A26A /* ElementsFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsFigure.swift; sourceTree = "<group>"; };
 		EE3CE583267FC6CE0054A26A /* ElementsOnHair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsOnHair.swift; sourceTree = "<group>"; };
+		EE5232572683E6700000E930 /* VerticalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGridView.swift; sourceTree = "<group>"; };
 		EE7C6036267CFDCD0073D8B9 /* Awards Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awards Collection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7C6039267CFDCD0073D8B9 /* Awards_CollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Awards_CollectionApp.swift; sourceTree = "<group>"; };
 		EE7C603B267CFDCD0073D8B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		EE7C6057267D14F20073D8B9 /* CurvesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesView.swift; sourceTree = "<group>"; };
 		EE8677DC267FE489005EDAB0 /* EyesElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyesElement.swift; sourceTree = "<group>"; };
 		EE8677DE267FEEF9005EDAB0 /* IronMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronMan.swift; sourceTree = "<group>"; };
+		EED7AE6826826F920075E95C /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		EEE4435826802AAC00672CC3 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
 		EEE4435A26802D4700672CC3 /* RedEyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedEyes.swift; sourceTree = "<group>"; };
 		EEE4DB28267E4DB0000863E8 /* FirstFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFigure.swift; sourceTree = "<group>"; };
@@ -61,6 +67,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE365D432682547A0013081C /* Award Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C6053267D03610073D8B9 /* GradientRectangles.swift */,
+				EE7C6055267D0CBD0073D8B9 /* PathView.swift */,
+				EE7C6057267D14F20073D8B9 /* CurvesView.swift */,
+				EE8677DE267FEEF9005EDAB0 /* IronMan.swift */,
+			);
+			path = "Award Views";
+			sourceTree = "<group>";
+		};
 		EE7C602D267CFDCD0073D8B9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +97,13 @@
 		EE7C6038267CFDCD0073D8B9 /* Awards Collection */ = {
 			isa = PBXGroup;
 			children = (
+				EE365D432682547A0013081C /* Award Views */,
 				EE8677E0267FF27E005EDAB0 /* IronMan View */,
 				EE7C6048267CFE1D0073D8B9 /* Supports */,
 				EE7C604A267CFE4D0073D8B9 /* Views */,
 				EE7C6049267CFE420073D8B9 /* Resources */,
 				EE7C603F267CFDCE0073D8B9 /* Preview Content */,
+				EED7AE6726826F7D0075E95C /* Grids */,
 			);
 			path = "Awards Collection";
 			sourceTree = "<group>";
@@ -118,9 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				EE7C603B267CFDCD0073D8B9 /* ContentView.swift */,
-				EE7C6057267D14F20073D8B9 /* CurvesView.swift */,
-				EE7C6055267D0CBD0073D8B9 /* PathView.swift */,
-				EE7C6053267D03610073D8B9 /* GradientRectangles.swift */,
 				EE7C604B267CFE650073D8B9 /* AwardsView.swift */,
 				EE7C604D267CFF110073D8B9 /* MainView.swift */,
 				EE7C6051267D02090073D8B9 /* StarterView.swift */,
@@ -138,9 +154,18 @@
 				EE8677DC267FE489005EDAB0 /* EyesElement.swift */,
 				EEE4435826802AAC00672CC3 /* Eyes.swift */,
 				EEE4435A26802D4700672CC3 /* RedEyes.swift */,
-				EE8677DE267FEEF9005EDAB0 /* IronMan.swift */,
 			);
 			path = "IronMan View";
+			sourceTree = "<group>";
+		};
+		EED7AE6726826F7D0075E95C /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				EE365D44268256EE0013081C /* CustomGridView.swift */,
+				EE5232572683E6700000E930 /* VerticalGridView.swift */,
+				EED7AE6826826F920075E95C /* Award.swift */,
+			);
+			path = Grids;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,12 +238,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8677DF267FEEF9005EDAB0 /* IronMan.swift in Sources */,
+				EED7AE6926826F920075E95C /* Award.swift in Sources */,
 				EE7C603C267CFDCD0073D8B9 /* ContentView.swift in Sources */,
 				EE7C6052267D02090073D8B9 /* StarterView.swift in Sources */,
 				EE7C604E267CFF110073D8B9 /* MainView.swift in Sources */,
+				EE5232582683E6700000E930 /* VerticalGridView.swift in Sources */,
 				EE3CE580267FA6A30054A26A /* SecondFigure.swift in Sources */,
 				EE8677DD267FE489005EDAB0 /* EyesElement.swift in Sources */,
 				EE3CE582267FB8CE0054A26A /* ElementsFigure.swift in Sources */,
+				EE365D45268256EE0013081C /* CustomGridView.swift in Sources */,
 				EE3CE584267FC6CE0054A26A /* ElementsOnHair.swift in Sources */,
 				EE7C6056267D0CBD0073D8B9 /* PathView.swift in Sources */,
 				EEE4435B26802D4700672CC3 /* RedEyes.swift in Sources */,

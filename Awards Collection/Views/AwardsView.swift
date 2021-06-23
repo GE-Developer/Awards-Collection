@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct AwardsView: View {
+    let awards = Award.getAwards()
+    var activeAwards: [Award] {
+        awards.filter { $0.awarded }
+    }
     let eyesColor: Color
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView {
-                    IronMan(width: 250, opacity: 0)
-                    GradientRectangles(width: 250, height: 250)
-                    PathView(width: 250, height: 250)
-                    CurvesView(width: 250, height: 250)
+            CustomGridView(items: activeAwards,
+                           columns: 2) { award in
+                VStack {
+                    award.awardView
+                    Text("\(award.title)")
+                        .font(.headline)
+                        .bold()
                 }
             }
-            .navigationBarTitle("Awards")
+            .navigationBarTitle("Active awards: \(activeAwards.count)")
         }
     }
 }
@@ -27,5 +32,7 @@ struct AwardsView: View {
 struct AwardsView_Previews: PreviewProvider {
     static var previews: some View {
         AwardsView(eyesColor: .white)
+            
+            
     }
 }
