@@ -14,14 +14,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             Button(action: buttonAction) {
-                HStack {
-                    Text(showAward ? "Hide Award" : "Show Award")
-                    Spacer()
-                    Image(systemName: "chevron.up.square")
-                        .scaleEffect(showAward ? 2 : 1)
-                        .rotationEffect(.degrees(showAward ? 0 : 180))
-                        .animation(.default)
-                }
+                Text(showAward ? "Hide Award" : "Show Award")
             }
             
             Spacer()
@@ -34,15 +27,6 @@ struct MainView: View {
                 .gesture(TapGesture().onEnded {
                     showAward.toggle()
                 }).disabled(!showAward)
-            
-            Spacer()
-            
-            Text("PUSH IRON MAN")
-                .fontWeight(.black)
-                .font(.system(.largeTitle, design: .rounded))
-                .foregroundColor(.purple)
-                .animation(.easeIn.delay(1))
-                .offset(y: showAward ? 0 : 200)
             
             Spacer()
         }

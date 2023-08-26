@@ -9,18 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
+        ZStack {
+            Color.secondary
+                .ignoresSafeArea()
             MainView()
-                .tabItem {
-                    Image(systemName: "rosette")
-                    Text("Main")
-                }
-            
-            AwardsView(eyesColor: .white)
-                .tabItem {
-                    Image(systemName: "pencil.and.outline")
-                    Text("Awards")
-                }
         }
     }
 }
